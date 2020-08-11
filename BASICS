@@ -1,0 +1,261 @@
+a = 10
+b = 10.5
+
+print(a)
+print(b)
+
+a = 10
+b = 10.5
+print(type(a))
+print(type(b))
+
+
+c= "Hello python"
+print(type(c))
+
+d = 3 + 4j
+print(type(d))
+
+name = input("INPUT IDENTITY")
+print("BONJOUR " , end = ' ')
+print(name)
+
+
+a = 12
+b = 13
+print(a*b)
+print(a/b)
+print(a//b)
+print(3**3)
+print(10%3)
+
+float(a)
+str("list")
+
+
+print("i","love","coding",sep='&',end="/")
+
+print("{0} is less than {1}".format(a,b))
+
+print("You have entered %f ,%d and %d"%(a,b,b))
+
+a , b, c = 10,"hi",'x'
+
+
+print(a,b,c)
+
+
+def myScore(score , lang , rollno):
+    print(score , lang , rollno)
+
+myScore( rollno=1 , lang="hindi" , score=98 )
+
+if __name__=="__main__":
+    print("i am main")
+    
+else:
+    print("from import")
+
+a = "string"
+print(a)
+
+a[2]
+
+print(len(a))
+
+# for i in a:
+#     print(i)
+for i in range(len(a)):
+    print(a[i])
+
+a = "string"
+##slicing
+a[1:5]
+
+para = """this 
+is a 
+paraggraph"""
+print(para.splitlines())
+
+print(para)
+print(type(para))
+
+
+astr = "The quick brown fox jumps over the lazy dog"
+
+ls  = astr.split()
+
+
+ls[3]
+
+
+a = "       apple.     "
+print(a.strip())
+print(a.rstrip())
+
+
+a = "mm"
+print(a.isnumeric())
+print(a.islower())
+print(a.isalpha())
+
+a = "I love having Apples Juice, and I like eat green Apple"
+
+
+a.replace("Apple" , "Oranges")
+
+a = "what after college"
+a.title()
+
+
+tu  = tuple([1,2,3])
+type([1,2,3])
+
+
+type(tu)
+
+a = (1,2,'f')
+b = (2 , 3 ,'p')
+print(a)
+a = b
+print(a)
+
+c = (1,2,3,4)
+print(max(c))
+print(min(c))
+
+
+a = (1,2,'f')
+b = (2 , 3 ,'p')
+a = a + b
+print(a)
+
+del a
+
+dic = {"GUANABANA" : 4343,
+       "PINE" :100,
+       "Orange" : 120
+}
+
+dic["GUANABANA"]
+
+dic["LITCHI"] = 130
+print(dic)
+
+dic["banana"]=[12,14,15]
+
+
+dic["banana"][2]
+
+dic["GUANABANA"] = 67
+print(dic)
+
+dic.keys()
+
+dic.values()
+
+dic2  = {"g" : 34, "h" : 56}
+dic.update(dic2)
+
+
+dic
+
+l1 = [1 , 2 , 3 , 4]
+l2 = [2 , 3 ,4 ,5 ]
+dic3 = dict(zip(l1,l2))
+
+zip(l1,l2)
+
+s = set([15,1,2,3,4,3,1,1])
+print(s)
+
+if 5 in s:
+    print("exsist")
+
+s.add(20)
+print(s)
+
+s.clear()
+
+
+s
+
+
+a1 = {1,2,3,4}
+a2 = {2,3,4,5,6}
+#Those element which are only in one of the sets
+print(a1^a2)
+
+a1.intersection(a2)
+
+a1.union(a2)
+
+
+a1.difference(a2)
+
+a2.difference(a1)
+
+
+def func(a, b , *x  ,**y):
+    print(a)
+    print(b)
+    print(x)
+    print(y)
+
+func(10,23 , 2,"hi",3,5 , shakes ="banana" , bird = "sparrow" ,student = "learning")
+
+s = "1+10/2+abs(-3)"
+
+eval(s)
+
+1+10/2+abs(-3)
+
+abs?
+
+l = ["mango" , "apple" , "banana"]
+for i in enumerate(l):
+    print(i)
+
+for i in l:
+    print(i)
+
+def func():
+    """Hello"""
+    pass
+func?
+
+class person:
+    pass
+P = person()
+
+
+print(type(P))
+
+class Person:
+    nationality = "Indians"
+    def __init__(self , name , clg ):
+        self.name = name
+        self.clg = clg
+#     def __init__():
+#         pass
+    def sayHi(self , name):
+        """this function says hi"""
+        print(self.name)
+        print(name)
+        self.__myprivatename("soham")
+    def __myprivatename(self , name):
+        print("i am private func")
+    
+p = Person("SHIVANSH" , "IIT")
+
+p.sayHi("SHIVANSH")
+p.clg
+
+class Student(Person):
+    def __init__(self , name , clg):
+        print(self.nationality)
+        self.name = name
+        self.clg  =clg
+    
+s = Student("SHIVANSH" , "mait")
+s.sayHi("SHIVANSH")
